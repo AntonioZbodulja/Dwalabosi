@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hr" lang="hr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+    <title>Početna</title>
+<link href="stil.css" rel="stylesheet" type="text/css" />
+<link href="grid.css" rel="stylesheet" type="text/css" />
+
+<!--Pretrazivanje tablice-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<!--Twitter bootstrap-->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+        <div class="header">
+        Dobrodošli
+            </div>
+
+        <div class="content">
+
+		<div class="column column-3">
+		<img src="images/logo.png" width="180"><br />
+		Dominica sancta, quid remediis sunt.
+		</div>
+		
+		<div class="column column-9">
+
+		<h3>Formular za upis pacijenata</h3>
+		
+			<form action="napravi-pdf.php" method="post" >
+Ime: <input type="text" name="ime"><br />
+Prezime: <input type="text" name="prezime"><br />
+Krvna grupa:
+<input type="radio" name="krvnagrupa" value="A">A 
+<input type="radio" name="krvnagrupa" value="B">B
+<input type="radio" name="krvnagrupa" value="AB">AB
+<input type="radio" name="krvnagrupa" value="0">0<br />
+
+<input type="radio" name="krvnagrupaposneg" value="+">+ (pos)
+<input type="radio" name="krvnagrupaposneg" value="-">- (neg)<br />
+
+<input type="submit" class="btn" value="Pošalji">
+</form>
+</div>
+            </div>
+
+    <div class="footer">Copyright ZKD, 2014</div>
+   
+   
+
+</body>
+</html>

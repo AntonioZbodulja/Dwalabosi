@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="hr" lang="hr" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+    <title>Početna</title>
+<link href="stil.css" rel="stylesheet" type="text/css" />
+<link href="grid.css" rel="stylesheet" type="text/css" />
+
+<!--Pretrazivanje tablice-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+<!--Twitter bootstrap-->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+        <div class="header">
+        Dobrodošli
+            </div>
+
+        <div class="content">
+
+		<div class="column column-3">
+		<img src="images/logo.png" width="180"><br />
+		Dominica sancta, quid remediis sunt.
+		</div>
+		
+		<div class="column column-9">
+
+		<h3>Formular za upis pacijenata</h3>
+		
+			<form action="podaci-o-pacijentu.php" method="post" >
+Ime: <input type="text" name="ime" required="required"><br />
+Prezime: <input type="text" name="prezime" required="required"><br />
+Spol: <input type="radio" name="spol" value="musko" required value="1">M <input type="radio" name="spol" value="zensko">Ž<br />
+Datum rođenja: <input type="date" name="datum" required="required"><br />
+Mjesto rođenja: <input type="text" name="mjesto" required="required"><br />
+Adresa i mjesto stanovanja: <input type="text" name="adresa" required="required"><br />
+Krvna grupa:
+<input type="radio" name="krvnagrupa" value="A" required value="1">A 
+<input type="radio" name="krvnagrupa" value="B">B
+<input type="radio" name="krvnagrupa" value="AB">AB
+<input type="radio" name="krvnagrupa" value="0">0<br />
+
+<input type="radio" name="krvnagrupaposneg" value="+" required value="1">+ (pos)
+<input type="radio" name="krvnagrupaposneg" value="-">- (neg)<br />
+
+Ima li prijašnjih medicinskih tegoba (srčane tegobe, tlak, virusne bolesti (Hepatits, HIV)):<br />
+<input type="radio" name="tegobe" value="da" required value="1">Da <input type="radio" name="tegobe" value="ne">Ne<br />
+
+Ako je odgovor na prijašnje pitanje "Da" popuniti:<br />
+Koje tegobe osoba ima
+<input type="text" name="kojetegobe" ><br />
+
+Je li osoba alergična na lijekove:<br />
+<input type="radio" name="alergija" value="Da" required value="1">Da
+<input type="radio" name="alergija" value="Ne">Ne
+<input type="radio" name="alergija" value="Ne zna">Ne zna<br />
+
+Ako je odgovor na prijašnje pitanje "Da" popuniti:<br />
+Na koje lijekove je osoba alergična 
+<input type="text" name="lijekovialergija"><br />
+<input type="submit" class="btn" value="Pošalji">
+</form>
+</div>
+            </div>
+
+    <div class="footer">Copyright ZKD, 2014</div>
+   
+   
+
+</body>
+</html>

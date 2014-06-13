@@ -1,0 +1,131 @@
+﻿body {
+background-color:rgba(20, 120, 109, 0.8);
+background-color: rgba(122, 10, 18, 0.8) !important;
+/*margin: 0;
+background-image:url('background.jpg');
+background-repeat: no-repeat;*/
+color: white !important;
+font-size: 18px !important;
+margin: 0; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.header{
+background-color: rgba(136, 181, 30, 0.5);
+background-color: rgba(136, 181, 30, 0.9);
+color: white;
+/*background-image:url('images/contentbg.png'); */
+height: 30px;
+text-align:center;
+font-size: 24px;
+padding-top: 10px;
+}
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+	padding-top: 30px;
+	background-color: rgba(20, 120, 109, 1);
+	background-color: rgba(188, 31, 42, 0.6);
+    min-height: 600px;
+    border-left: 3px solid rgba(136, 181, 30, 0.5);
+    border-right: 3px solid rgba(136, 181, 30, 0.5);
+    padding-left: 15px;
+    background-image:url('images/contentbg.png');
+    background-repeat: repeat;
+}
+.korisnik{
+text-align: right;
+}
+.navigation{
+padding-left: 20px;
+padding-top: 20px;
+}
+
+.mjesto-naslov{
+padding: 0;
+margin: 35px 0 0 0;
+height: 45px;
+}
+span.mjesto-broj {
+background-color: #E4A057;
+color: #FFF;
+padding: 15px 20px;
+font-size: 26px;
+font-weight: bold;
+margin: 0;
+height: 50px;
+}
+span.ime-mjesta {
+color: white;
+font-size: 22px;
+padding: 0 0 10px 10px;
+margin: 0;
+}
+.slika-mjesta{
+margin: 0 20px 20px 0;
+}
+
+.slika-mjesta img{
+max-width: 100%;
+}
+.opis{
+font-size: 18px;
+margin: 0 20px 20px 0;
+}
+.cijena{
+font-size: 20px;
+padding-bottom: 7%;
+}
+a#from-link{
+color: white;
+}
+
+.footer {
+background-color: rgba(136, 181, 30, 0.5);
+background-color: rgba(136, 181, 30, 0.9);
+height: 25px;
+padding-left: 20%;
+padding-top: 10px;
+}
+.buttoni {
+padding-left: 20%;
+padding-top: 20px;
+}
+table,th,td
+{
+border:1px solid black;
+border-collapse:collapse;
+}
+th,td
+{
+padding:5px;
+}
+tr:hover{
+background-color: rgba(136, 181, 30, 0.5);
+}
+th{
+background-color: gray;
+}
+input#search {
+margin-bottom: 5px; 
+padding: 2px 3px; 
+width: 209px;
+height: 30px;
+}
+#podaci-prikazi, #skolovanje-prikazi, #iskustvo-prikazi, #vjestine-prikazi{
+cursor:pointer;
+}
+
+#podaci, #skolovanje, #iskustvo, #vjestine{
+display: none;
+}
+
+.reklama{
+position:absolute;
+left:30%;
+top:30%;
+z-index:99;
+}
